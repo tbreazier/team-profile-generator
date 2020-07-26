@@ -21,3 +21,7 @@
     background-color: white;
     padding: 5px;
 }
+
+.card {
+   box-shadow: 3px 3px rgb(143, 143, 143); 
+}
