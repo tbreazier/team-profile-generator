@@ -1,6 +1,6 @@
 const Employee = require('../lib/Employee.js');
 
-//Test for Employee parameters
+//Test New Employee Object
 test('New Employee Object Created', () => {
     const employee = new Employee('Karl', 3255, 'karl@gmail.com')
 
