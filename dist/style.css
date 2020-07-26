@@ -1,0 +1,23 @@
+.jumbotron {
+    background-color: rgb(206, 64, 64);
+}
+
+.title {
+    color: white;
+}
+
+.card-header {
+    background-color: rgb(48, 48, 237);
+    color: white;
+}
+
+.card-body {
+    background-color:whitesmoke;
+}
+
+.list-item {
+    list-style-type: none;
+    border: solid 1px black;
+    background-color: white;
+    padding: 5px;
+}

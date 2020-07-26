@@ -6,6 +6,7 @@ const fs = require('fs');
 const Engineer = require('./lib/Engineer.js');
 const Manager = require('./lib/Manager.js');
 const Intern = require('./lib/Intern.js');
+const generatePage = require('./src/generatepage.js');
 
 //Empty Array to add Team Member Objects
 const teamArr = [];
@@ -94,9 +95,9 @@ const addTeam = () => {
             } else if (data.menu === 'Add Intern') {
                 addIntern();
             } 
-            // else {
-            //     generatePage();
-            // }
+            else {
+                buildTeam();
+            }
         })
 };
 //Add Engineer
@@ -230,5 +231,13 @@ const addIntern = () => {
 }
 //Start Application
 addManager();
+
+//Build Team
+function buildTeam() {
+    fs.writeFileSync('./dist/team.html', generatePage(teamArr), 'UTF-8');
+    fs.copyFileSync('./src/style.css', './dist/style.css', 'UTF-8');
+    console.log(teamArr);
+};
+
 
 
