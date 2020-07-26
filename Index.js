@@ -73,7 +73,7 @@ const addManager = () => {
         .then(data => {
             const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
             teamArr.push(manager);
-            console.log(manager);
+            // console.log(manager);
             addTeam();
         })
 };
@@ -160,7 +160,7 @@ const addEngineer = () => {
         .then(data => {
             const engineer = new Engineer(data.name, data.id, data.email, data.github);
             teamArr.push(engineer);
-            console.log(engineer);
+            // console.log(engineer);
             addTeam();
         })
 }
@@ -225,7 +225,7 @@ const addIntern = () => {
         .then(data => {
             const intern = new Intern(data.name, data.id, data.email, data.school);
             teamArr.push(intern);
-            console.log(intern);
+            // console.log(intern);
             addTeam();
         })
 }
@@ -236,7 +236,7 @@ addManager();
 function buildTeam() {
     fs.writeFileSync('./dist/team.html', generatePage(teamArr), 'UTF-8');
     fs.copyFileSync('./src/style.css', './dist/style.css', 'UTF-8');
-    console.log(teamArr);
+    // console.log(teamArr);
 };
 
 

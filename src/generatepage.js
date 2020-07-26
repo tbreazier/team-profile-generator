@@ -11,7 +11,7 @@ function generatePage(teamArr) {
                     </div>
                     <div class="card-body">
                         <li class="list-item">Employee ID: ${teamArr[i].id}</li>
-                        <li class="list-item">Email: <a href=:"mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
+                        <li class="list-item">Email: <a href="mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
                         <li class="list-item">Office Number: ${teamArr[i].officeNumber}</li>
                     </div>
             </div>`
@@ -24,7 +24,7 @@ function generatePage(teamArr) {
                     </div>
                     <div class="card-body">
                         <li class="list-item">Employee ID: ${teamArr[i].id}</li>
-                        <li class="list-item">Email: <a href=:"mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
+                        <li class="list-item">Email: <a href="mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
                         <li class="list-item">Github Username: <a href="https://github.com/${teamArr[i].github}">${teamArr[i].github}</a></li>
                     </div>
             </div>`
@@ -37,7 +37,7 @@ function generatePage(teamArr) {
                     </div>
                     <div class="card-body">
                         <li class="list-item">Employee ID: ${teamArr[i].id}</li>
-                        <li class="list-item">Email: <a href=:"mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
+                        <li class="list-item">Email: <a href="mailto:${teamArr[i].email}">${teamArr[i].email}</a></li>
                         <li class="list-item">School: ${teamArr[i].school}</li>
                     </div>
             </div>`
