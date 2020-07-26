@@ -68,7 +68,12 @@ const addManager = () => {
                 }
             }
         ])
-}
+        .then(data => {
+            const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
+            teamArr.push(manager);
+            console.log(manager);
+        })
+};
 
 //Add Additional Team Members or build page
 
